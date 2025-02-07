@@ -1,0 +1,12 @@
+// SCSS - Principial
+@import 'bootstrap/scss/bootstrap';
+@import 'utils/variables';
+@import 'global';
+
+// Secciones
+
+@import 'sections/navbar';
+@import 'sections/banner';
+@import 'sections/servicios';
+@import 'sections/galeria';
+

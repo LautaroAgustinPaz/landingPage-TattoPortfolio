@@ -1,0 +1,87 @@
+/* Contenedor principal del banner */
+.container-banner_principal {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.644); /* Respaldo si no carga el video */
+
+    /* Video de fondo */
+    #background-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    /* Contenido encima del video */
+    .content {
+        position: relative;
+        z-index: 1;
+        /* Asegura que el texto esté encima del video */
+        text-align: center;
+        color: white;
+        padding: 8rem 30px 30px 30px;
+
+        /*  Título  */
+        .banner-p_titulo {
+            font-family: $titulos;
+            font-size: 4.5rem;
+            font-weight: 500;
+            background: $custom-degrade; // Aplica el degradé como fondo
+            -webkit-background-clip: text; // Recorta el fondo al área del texto
+            color: transparent; // Hace que el color del texto sea transparente
+            margin-bottom: 50px;
+        }
+        
+        // Contendor Boton + Icono + Texto
+        .btn-custom {
+            background-color: transparent;
+            border: 1px solid $custom-primary;
+            color: $custom-primary;
+            font-size: 18px;
+            font-weight: 400;
+            border-radius: 15px;
+            padding: 10px 20px;
+            
+            &:hover {
+                border: 1px solid $custom-secondary-1;
+                color: $custom-secondary-1;
+            }
+
+            // Icono WhatsApp
+            .i {
+            color: $custom-primary; // Usa la variable de Sass
+            font-size: 20px; // Tamaño del icono
+            margin-right: 15px;
+            }
+
+            &:hover > .i {
+                color: darken($custom-secondary-1, 10%); // Cambia el color al hacer hover
+            }
+        }
+        
+
+    }
+}
+
+//  Media Queries
+
+@media (max-width: 768px) {
+    .banner-p_titulo {
+        font-size: 4rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-p_titulo {
+        font-size: 3rem !important;
+    }
+}

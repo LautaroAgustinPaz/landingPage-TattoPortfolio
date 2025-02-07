@@ -1,0 +1,15 @@
+
+.contenedor-galeria {
+    background-color: $custom-background;
+    min-height: 500px;
+    width: 100%;
+    padding: 5rem 40px 5rem 40px;
+
+    .galeria-title {
+        text-align: center;
+        color: $custom-primary;
+        font-family: $titulos;
+        font-size: $secciones-titulos;
+        font-weight: 400;
+    }
+}

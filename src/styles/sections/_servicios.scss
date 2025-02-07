@@ -1,0 +1,54 @@
+
+.servicios-contenedor {
+    border-top: 1px solid $custom-primary;
+    background-color: $custom-background;
+    padding: 5rem 40px 5rem 40px;
+    border-bottom: 1px solid $custom-primary;
+
+    .servicios-title {
+        color: $custom-primary;
+        font-family: $titulos;
+        font-size: $secciones-titulos;
+        font-weight: 400;
+        padding-bottom: 5rem;
+    }
+
+    
+    .servicios-cards {
+        border: 1px solid $custom-primary;
+        border-radius: 20px;
+        height: 10rem;
+
+        &:hover {
+            border: 1px solid $custom-secondary-1;
+        }
+
+        .servicios-imgs {
+            border-radius: 20px 20px 2px 2px;
+            overflow: hidden;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            background-color: $custom-primary;
+            border-radius: 0px 0px 20px 20px;
+            padding: 20px;
+            min-height: 130px;
+            display: flex;;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+
+            .card-title {
+                text-align: center;
+                margin: 0px;
+                font-family: $titulos;
+                font-size: 30px;
+                font-weight: 400;
+                color: $titulos-color;
+            }
+        }
+    }
+}
+
