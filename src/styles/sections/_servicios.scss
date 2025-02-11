@@ -12,12 +12,11 @@
         font-weight: 400;
         padding-bottom: 5rem;
     }
-
     
     .servicios-cards {
         border: 1px solid $custom-primary;
         border-radius: 20px;
-        height: 10rem;
+        height: 27rem !important;
 
         &:hover {
             border: 1px solid $custom-secondary-1;
@@ -52,3 +51,11 @@
     }
 }
 
+// Media Queries
+
+@media (max-width: 400px) {
+
+    .contenedor-card-servicios {
+        padding: 0px !important;
+    }
+}
