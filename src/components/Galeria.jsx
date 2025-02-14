@@ -19,7 +19,7 @@ const Galeria = () => {
 
   return (
     
-    <div id="galeria" className='container-fluid contenedor-galeria'>
+    <div id="galeria" className='contenedor-galeria'>
         <h2 className="text-center galeria-title">Galeria</h2>
 
         {/* Botones Grupo */}

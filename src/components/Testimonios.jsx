@@ -30,7 +30,7 @@ const Testimonios = () => {
 
             <div className="row contenedor-cards">
                 <Marquee             // Efecto Horizontal
-                    speed={50}      
+                    speed={30}      
                     pauseOnHover={false}
                     gradient={false}
                     gradientWidth={100}

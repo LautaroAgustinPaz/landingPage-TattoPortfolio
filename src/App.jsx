@@ -4,6 +4,8 @@ import Navbar from './components/Navbar'
 import Servicios from './components/Servicios'
 import SobreMi from './components/SobreMi'
 import Testimonios from './components/Testimonios'
+import Ubicacion from './components/Ubicacion'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -15,6 +17,8 @@ function App() {
       <Galeria></Galeria>
       <SobreMi></SobreMi>
       <Testimonios></Testimonios>
+      <Ubicacion></Ubicacion>
+      <Footer></Footer>
     </>
   )
 }
