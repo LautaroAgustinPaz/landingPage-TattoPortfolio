@@ -3,7 +3,7 @@
     background-color: $custom-background;
     min-height: 500px;
     width: 100%;
-    padding: 5rem 20px 5rem 20px;
+    padding: 5rem 30px 5rem 30px;
 
     // titulo
     .galeria-title {
@@ -19,7 +19,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-top: 5rem;
+        margin: 5rem 20px 0px 20px;
 
         .btn {
             background-color: transparent;

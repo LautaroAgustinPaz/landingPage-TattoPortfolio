@@ -19,6 +19,7 @@
     "node": "^23.7.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-fast-marquee": "^1.6.5",
     "sass": "^1.83.4"
   },
   "devDependencies": {
