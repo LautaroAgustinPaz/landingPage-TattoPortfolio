@@ -2,7 +2,8 @@
 .servicios-contenedor {
     border-top: 1px solid $custom-primary;
     background-color: $custom-background;
-    padding: 5rem 40px 5rem 40px;
+    padding: 5rem 0rem 5rem 0rem;
+    overflow: hidden;
     border-bottom: 1px solid $custom-primary;
 
     .servicios-title {
@@ -12,50 +13,71 @@
         font-weight: 400;
         padding-bottom: 5rem;
     }
-    
-    .servicios-cards {
-        border: 1px solid $custom-primary;
-        border-radius: 20px;
-        height: 27rem !important;
 
-        &:hover {
-            border: 1px solid $custom-secondary-1;
-        }
+    .contenedor-card-servicios {
 
-        .servicios-imgs {
-            border-radius: 20px 20px 2px 2px;
-            overflow: hidden;
-            height: 300px;
-            object-fit: cover;
-        }
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
 
-        .card-body {
-            background-color: $custom-primary;
-            border-radius: 0px 0px 20px 20px;
-            padding: 20px;
-            min-height: 130px;
-            display: flex;;
-            align-content: center;
-            align-items: center;
-            justify-content: center;
+        .card-contenedor {
+            padding: 0px;
 
-            .card-title {
-                text-align: center;
-                margin: 0px;
-                font-family: $titulos;
-                font-size: 30px;
-                font-weight: 400;
-                color: $titulos-color;
-            }
+            .servicios-cards {
+                    border: 1px solid $custom-primary;
+                    border-radius: 20px;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    overflow: hidden;
+            
+                    &:hover {
+                        transform: scale(1.02);
+                    }
+            
+                    .servicios-imgs {
+                        border-radius: 20px 20px 2px 2px;
+                        height: 300px;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+            
+                    .card-body {
+                        background-color: $custom-primary;
+                        border-radius: 0px 0px 20px 20px;
+                        padding: 20px;
+                        min-height: 130px;
+                        display: flex;
+                        ;
+                        align-content: center;
+                        align-items: center;
+                        justify-content: center;
+            
+                        .card-title {
+                            text-align: center;
+                            margin: 0px;
+                            font-family: $titulos;
+                            font-size: 30px;
+                            font-weight: 400;
+                            color: $titulos-color;
+                        }
+                    }
+                }
+
         }
     }
 }
 
 // Media Queries
+@media (max-width: 767px) {
 
-@media (max-width: 400px) {
+    .servicios-contenedor {
+        padding: 5rem 3rem 5rem 3rem;
+    }
+}
 
-    .contenedor-card-servicios {
-        padding: 0px !important;
+@media (max-width: 480px) {
+
+    .servicios-contenedor {
+        padding: 5rem 27px 5rem 27px;
     }
 }

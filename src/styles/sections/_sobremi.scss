@@ -17,7 +17,7 @@
         overflow: hidden;
         margin: 0px 10px;
 
-        // Columna IMG
+        // Columna  - IMG
         .columna-img {
             padding: 0px;
             min-height: 500px;
@@ -30,7 +30,7 @@
             }
         }
 
-        // Columna BIOGRAFIA
+        // Columna - BIOGRAFIA
         .columna-biografia {
             background-color: $custom-primary;
             padding: 40px 40px;
@@ -62,9 +62,10 @@
                 margin-top: 100px;
                 display: flex;
                 flex-direction: row;
+                flex-wrap: wrap;
                 gap: 20px;
 
-                .contenedor-redondo {
+                .contenedor-redondo a {
                     border-radius: 100%;
                     padding: 10px 12px;
                     border: 1px solid $custom-background;

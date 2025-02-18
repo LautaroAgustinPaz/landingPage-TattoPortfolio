@@ -4,24 +4,27 @@
     padding: 15px 15px 15px 15px;
     border-bottom: 1px solid $custom-primary;
 
-    .navbar-logo {
+    a .navbar-logo {
         height: 60px;
         width: 60px;
+        cursor: pointer;
     }
 
     .navbar-toggler {
         border: none;
+        font-size: 25px;
+        color: red;
+ 
+
+        .navbar-toggler-icon {
+            color: $custom-primary !important;
+        }
 
         &:focus {
             outline: none;
             box-shadow: none; 
         }
     }
-
-    .navbar-toggler  {
-        font-size: 25px;
-    }
-
     .offcanvas-body {
         padding: 30px;
     }

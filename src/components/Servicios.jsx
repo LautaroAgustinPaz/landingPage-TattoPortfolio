@@ -5,9 +5,10 @@ const Servicios = () => {
   return (
     <section className="container-fluid servicios-contenedor">
       <h2 className="text-center servicios-title">Servicios</h2>
-      <div className="row">
+      <div className="row contenedor-card-servicios">
+
         {/* Card 1: Diseños personalizados */}
-        <div className="col-md-4 mb-5 contenedor-card-servicios">
+        <div className="col-xs-12 col-md-3 col-lg-3 card-contenedor">
           <div className="card h-100 servicios-cards">
             <img
               src="src/assets/imgs/cards/card-1.jpeg"
@@ -21,7 +22,7 @@ const Servicios = () => {
         </div>
 
         {/* Card 2: Tapado de tatuajes antiguos */}
-        <div className="col-md-4 mb-5 contenedor-card-servicios">
+        <div className="col-xs-12 col-md-3 col-lg-3 card-contenedor">
           <div className="card h-100 servicios-cards">
             <img
               src="src/assets/imgs/cards/card-2.jpeg"
@@ -35,7 +36,7 @@ const Servicios = () => {
         </div>
 
         {/* Card 3: Productos de cuidado post-tatuaje */}
-        <div className="col-md-4 mb-5 contenedor-card-servicios">
+        <div className="col-xs-12 col-md-3 col-lg-3 card-contenedor">
           <div className="card h-100 servicios-cards">
             <img
               src="src/assets/imgs/cards/card-3.jpeg"
@@ -47,7 +48,9 @@ const Servicios = () => {
             </div>
           </div>
         </div>
+        
       </div>
+
     </section>
   );
 };

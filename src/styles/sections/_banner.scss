@@ -34,7 +34,7 @@
         .banner-p_titulo {
             font-family: $titulos;
             font-size: 4.5rem;
-            font-weight: 500;
+            font-weight: 400;
             background: $custom-degrade; // Aplica el degradé como fondo
             -webkit-background-clip: text; // Recorta el fondo al área del texto
             color: transparent; // Hace que el color del texto sea transparente
@@ -47,19 +47,23 @@
             border: 1px solid $custom-primary;
             color: $custom-primary;
             font-size: 18px;
-            font-weight: 400;
+            font-weight: 500;
             border-radius: 15px;
             padding: 10px 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: $custom-secondary-3;
             
             &:hover {
                 border: 1px solid $custom-secondary-1;
+                background-color: $custom-secondary-2;
                 color: $custom-secondary-1;
+                transform: scale(1.02);
             }
 
             // Icono WhatsApp
             .i {
             color: $custom-primary; // Usa la variable de Sass
-            font-size: 20px; // Tamaño del icono
+            font-size: 21px; // Tamaño del icono
             margin-right: 15px;
             }
 
