@@ -9,3 +9,18 @@
 body {
     background-color: white;
 }
+// Scroll suave
+html {
+    scroll-behavior: smooth;
+}
+
+// Cuando redirecciona en la seccion, lo posiciona arriba de todo.
+:root {
+    scroll-padding-top: 80px;               
+    /* Ajusta según la altura de tu header */
+}
+
+section {
+    min-height: 100vh;
+    /* o el valor que necesites */
+}

@@ -6,7 +6,7 @@ const SobreMi = () => {
     
   return (
 
-    <div className='container-fluid contenedor-sobremi-mi'>
+    <section id='sobre-mi' className='container-fluid contenedor-sobremi'>
         <h2 className='sobre-mi_titulo text-center'>Sobre mi</h2>
 
         <div className="row sobre-mi_row">
@@ -24,7 +24,7 @@ const SobreMi = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     
   )
 }

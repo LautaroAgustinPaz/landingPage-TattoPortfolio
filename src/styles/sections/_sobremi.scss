@@ -1,7 +1,7 @@
-.contenedor-sobremi-mi {
+.contenedor-sobremi {
     border-top: 1px solid $custom-primary;
     background-color: $custom-background;
-    padding: 5rem 3rem 6rem 3rem;
+    padding: 5rem 3rem 5rem 3rem;
 
     .sobre-mi_titulo {
         color: $custom-primary;
@@ -93,7 +93,7 @@
 // Celulares
 @media (max-width: 480px) { 
 
-    .contenedor-sobremi-mi {
+    .contenedor-sobremi {
         padding-right: 20px;
         padding-left: 15px;
 

@@ -6,6 +6,7 @@ import SobreMi from './components/SobreMi'
 import Testimonios from './components/Testimonios'
 import Ubicacion from './components/Ubicacion'
 import Footer from './components/Footer'
+import Btncontacto from './components/Btncontacto'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <SobreMi></SobreMi>
       <Testimonios></Testimonios>
       <Ubicacion></Ubicacion>
+      <Btncontacto></Btncontacto>
       <Footer></Footer>
     </>
   )

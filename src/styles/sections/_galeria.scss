@@ -37,6 +37,12 @@
                 border: 1px solid $custom-secondary-1;
             }
         }
+        
+        .activo {
+                background-color: $custom-secondary-2;
+                color: $custom-secondary-1;
+                border: 1px solid $custom-secondary-1;
+        }
 
         // Botones redondeo
         .btn-1 {

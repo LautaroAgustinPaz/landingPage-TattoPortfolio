@@ -2,11 +2,8 @@ import React, { useState } from 'react'
 
 const Galeria = () => {
 
-  // Botones activos
-  const [activeButton, setActiveButton] = useState(null);
-
   // Cambio de categoria
-  const[categoria, setCategoria] = useState("tradicional"); // Valor por defecto TRADICIONAL
+  const [categoria, setCategoria] = useState("tradicional"); // Valor por defecto TRADICIONAL
 
   // Rutas de imágenes sin necesidad de importar
   const imagenes = {
@@ -16,25 +13,32 @@ const Galeria = () => {
     blackwork: [1, 2, 3, 4, 5, 6].map((num) => `/imgs/blackwork/imagen-${num}.jpg`),
   };
 
-
   return (
     
-    <div id="galeria" className='contenedor-galeria'>
+    <section id="galeria" className='contenedor-galeria'>
         <h2 className="text-center galeria-title">Galeria</h2>
 
         {/* Botones Grupo */}
         <div className="btn-group contenedor-botones-grupo" role="group" aria-label="Basic radio toggle button group">
-          <input onClick={() => setCategoria("tradicional")} type="radio" className="btn-check" name="btnradio" id="btnradio1" autoComplete="off" defaultChecked />
-          <label className="btn btn-1" htmlFor="btnradio1">Tradicional</label>
-
-          <input onClick={() => setCategoria("realismo")} type="radio" className="btn-check" name="btnradio" id="btnradio2" autoComplete="off"/>
-          <label className="btn btn-2" htmlFor="btnradio2">Realismo</label>
-
-          <input onClick={() => setCategoria("geométrico")}  type="radio" className="btn-check" name="btnradio" id="btnradio3" autoComplete="off" />
-          <label className="btn btn-3" htmlFor="btnradio3">Geométrico</label>
-
-          <input onClick={() => setCategoria("blackwork")}  type="radio" className="btn-check" name="btnradio" id="btnradio4" autoComplete="off" />
-          <label className="btn btn-4" htmlFor="btnradio4">Blackwork</label>
+          {["tradicional", "realismo", "geométrico", "blackwork"].map((tipo, index) => (
+          <React.Fragment key={tipo}>
+            <input
+              onClick={() => setCategoria(tipo)}
+              type="radio"
+              className="btn-check"
+              name="btnradio"
+              id={`btnradio${index + 1}`}
+              autoComplete="off"
+              defaultChecked={categoria === tipo}
+            />
+            <label 
+              className={`btn btn-${index + 1} ${categoria === tipo ? "activo" : ""}`} 
+              htmlFor={`btnradio${index + 1}`}
+            >
+              {tipo.charAt(0).toUpperCase() + tipo.slice(1)}
+            </label>
+          </React.Fragment>
+        ))}
         </div>
 
         {/* Galeria de imagenes */}
@@ -53,7 +57,7 @@ const Galeria = () => {
           <a href="#galeria" class="btn btn-elegir-categoria">Elegir otra categoria</a>
         </div>
 
-    </div>
+    </section>
   )
 }
 

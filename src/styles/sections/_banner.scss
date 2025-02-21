@@ -12,9 +12,11 @@
     /* Video de fondo */
     #background-video {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -87,5 +89,23 @@
 @media (max-width: 480px) {
     .banner-p_titulo {
         font-size: 3rem !important;
+    }
+}
+@media (max-width: 340px) {
+
+    .container-banner_principal {
+        .content {
+            .btn-custom {
+                font-size: 13px;
+
+                .i {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .banner-p_titulo {
+        font-size: 2.4rem !important;
     }
 }

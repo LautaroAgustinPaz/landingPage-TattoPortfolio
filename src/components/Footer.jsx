@@ -14,7 +14,7 @@ const Footer = () => {
      };
     
   return (
-    <div className='container-fluid contenedor-footer'>
+    <section className='container-fluid contenedor-footer'>
         <div className='row'>
 
             {/* Columna 1 - Foto */}
@@ -73,7 +73,7 @@ const Footer = () => {
             </div>
         </div>
 
-    </div>
+    </section>
   )
 }
 

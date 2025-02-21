@@ -8,7 +8,7 @@ const Banner = () => {
   };
 
   return (
-    <div className='container-banner_principal'>
+    <section id='inicio' className='container-banner_principal'>
       <video autoPlay muted loop id="background-video">
         <source src="src/assets/vids/video-2.mp4" type="video/mp4" />
         Tu navegador no soporta videos HTML5.
@@ -18,10 +18,10 @@ const Banner = () => {
         <button className="btn-custom"
           onClick={redirigirWhatsApp}>
           <FontAwesomeIcon className='i' icon={faWhatsapp}/>
-          Reservar Turno
+          Agendar turno
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

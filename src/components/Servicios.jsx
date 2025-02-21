@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Servicios = () => {
   return (
-    <section className="container-fluid servicios-contenedor">
+    <section id='servicios' className="container-fluid servicios-contenedor">
       <h2 className="text-center servicios-title">Servicios</h2>
       <div className="row contenedor-card-servicios">
 

@@ -3,6 +3,7 @@
     background-color: $custom-background;
     padding: 15px 15px 15px 15px;
     border-bottom: 1px solid $custom-primary;
+    min-height: 50px;
 
     a .navbar-logo {
         height: 60px;
@@ -12,12 +13,11 @@
 
     .navbar-toggler {
         border: none;
-        font-size: 25px;
-        color: red;
- 
 
-        .navbar-toggler-icon {
-            color: $custom-primary !important;
+        .bi-list {
+            color: $custom-primary;
+            width: 2.8rem;
+            height: 2.8rem;
         }
 
         &:focus {
@@ -49,6 +49,10 @@
         .nav-link {
             font-size: 28px;
             font-family: $titulos;
+        }
+
+        .nav-link.active {
+            color: $custom-primary !important;
         }
     }    
 }

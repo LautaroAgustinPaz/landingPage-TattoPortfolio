@@ -81,3 +81,12 @@
         padding: 5rem 27px 5rem 27px;
     }
 }
+
+@media (max-width: 250px) {
+
+    .servicios-contenedor .contenedor-card-servicios .card-contenedor .servicios-cards .card-body {
+        .card-title {
+            font-size: 25px;
+        }
+    }
+}

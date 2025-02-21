@@ -25,7 +25,7 @@ const Testimonios = () => {
     ];
 
     return (
-        <div className="container-fluid contenedor-testimonios">
+        <section id='testimonios' className="container-fluid contenedor-testimonios">
             <h2 className="text-center testimonios_title">Testimonios</h2>
 
             <div className="row contenedor-cards">
@@ -56,7 +56,7 @@ const Testimonios = () => {
                     ))}
                 </Marquee>
             </div>
-        </div>
+        </section>
     );
 };
 

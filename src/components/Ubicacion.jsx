@@ -2,7 +2,7 @@ import React from 'react'
 
 const Ubicacion = () => {
   return (
-    <div className='container-fluid contenedor-ubicacion'>
+    <section id='ubicacion' className='container-fluid contenedor-ubicacion'>
       <h2 className="text-center ubicacion-title">Ubicación</h2>
       
       <div className='row contenedor-mapa'>
@@ -22,7 +22,7 @@ const Ubicacion = () => {
 
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
