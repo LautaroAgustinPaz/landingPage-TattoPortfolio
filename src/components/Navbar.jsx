@@ -6,11 +6,10 @@ const Navbar = () => {
 
   useEffect(() => {
   const sections = document.querySelectorAll("section[id]");
-  const observer = new IntersectionObserver(
+  const observer = new IntersectionObserver (
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          console.log("Sección visible:", entry.target.id); // <-- debug
           setActiveSection(entry.target.id);
         }
       });
@@ -42,11 +41,11 @@ const Navbar = () => {
       <div className="container-fluid">
         
         <a onClick={scrollToTop}>
-          <img className='navbar-logo' src="src/assets/imgs/logo-tatto.png"/>
+          <img className='navbar-logo' src="/imgs/logo-tatto copy.png"/>
         </a>
         <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
+            <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
           </svg>
         </button>
 

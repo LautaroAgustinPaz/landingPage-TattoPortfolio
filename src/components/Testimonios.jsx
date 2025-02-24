@@ -1,7 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Marquee from "react-fast-marquee";
+import ScrollReveal from 'scrollreveal';
 
 const Testimonios = () => {
+
+    useEffect (() => {
+
+    ScrollReveal().reveal('.testimonios_title', {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      delay: 200,
+      easing: 'ease-in-out',
+      reset: false
+    });
+
+    ScrollReveal().reveal('.testimonio-card ', {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      delay: 400,
+      easing: 'ease-in-out',
+      reset: false
+    });
+
+  }, []);
 
     const testimonials = [
         {

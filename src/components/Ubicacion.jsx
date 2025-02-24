@@ -1,6 +1,30 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import ScrollReveal from 'scrollreveal';
 
 const Ubicacion = () => {
+
+    useEffect (() => {
+
+    ScrollReveal().reveal('.ubicacion-title', {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      delay: 200,
+      easing: 'ease-in-out',
+      reset: false
+    });
+
+    ScrollReveal().reveal('.contenedor-mapa', {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      delay: 400,
+      easing: 'ease-in-out',
+      reset: false
+    });
+
+  }, []);
+
   return (
     <section id='ubicacion' className='container-fluid contenedor-ubicacion'>
       <h2 className="text-center ubicacion-title">Ubicación</h2>

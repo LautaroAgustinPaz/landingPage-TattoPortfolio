@@ -1,8 +1,33 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ScrollReveal from 'scrollreveal';
 
 const Servicios = () => {
+  
+    useEffect(() => {
+    // Configuración para el título: aparece de abajo hacia arriba
+    ScrollReveal().reveal('.servicios-title', {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      delay: 200,
+      easing: 'ease-in-out',
+      reset: false
+    });
+
+    // Configuración para el contenedor de las cards: aparece de abajo hacia arriba
+    ScrollReveal().reveal('.contenedor-card-servicios', {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      delay: 400,
+      easing: 'ease-in-out',
+      reset: false
+    });
+  }, []);
+
   return (
+    
     <section id='servicios' className="container-fluid servicios-contenedor">
       <h2 className="text-center servicios-title">Servicios</h2>
       <div className="row contenedor-card-servicios">
@@ -11,7 +36,7 @@ const Servicios = () => {
         <div className="col-xs-12 col-md-3 col-lg-3 card-contenedor">
           <div className="card h-100 servicios-cards">
             <img
-              src="src/assets/imgs/cards/card-1.jpeg"
+              src="/imgs/cards/card-1.jpg"
               className="card-img-top servicios-imgs"
               alt="Diseños personalizados"
             />
@@ -25,7 +50,7 @@ const Servicios = () => {
         <div className="col-xs-12 col-md-3 col-lg-3 card-contenedor">
           <div className="card h-100 servicios-cards">
             <img
-              src="src/assets/imgs/cards/card-2.jpeg"
+              src="/imgs/cards/card-2.jpg"
               className="card-img-top servicios-imgs"
               alt="Tapado de tatuajes antiguos"
             />
@@ -39,7 +64,7 @@ const Servicios = () => {
         <div className="col-xs-12 col-md-3 col-lg-3 card-contenedor">
           <div className="card h-100 servicios-cards">
             <img
-              src="src/assets/imgs/cards/card-3.jpeg"
+              src="/imgs/cards/card-3.jpg"
               className="card-img-top servicios-imgs"
               alt="Productos de cuidado post-tatuaje"
             />

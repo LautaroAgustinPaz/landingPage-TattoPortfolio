@@ -10,7 +10,7 @@ const Banner = () => {
   return (
     <section id='inicio' className='container-banner_principal'>
       <video autoPlay muted loop id="background-video">
-        <source src="src/assets/vids/video-2.mp4" type="video/mp4" />
+        <source src="public/vids/video-2.mp4" type="video/mp4" />
         Tu navegador no soporta videos HTML5.
       </video>
       <div className='content'>

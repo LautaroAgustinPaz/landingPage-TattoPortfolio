@@ -1,8 +1,31 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebook, faTiktok} from '@fortawesome/free-brands-svg-icons';
-import React from 'react'
+import ScrollReveal from 'scrollreveal';
+import React, { useEffect } from 'react'
 
 const SobreMi = () => {
+
+    useEffect(() => {
+
+    ScrollReveal().reveal('.sobre-mi_titulo', {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      delay: 200,
+      easing: 'ease-in-out',
+      reset: false
+    });
+
+    // Animación para el botón "Elegir otra categoria"
+    ScrollReveal().reveal('.sobre-mi_row', {
+      origin: 'right',
+      distance: '100px',
+      duration: 800,
+      delay: 200,
+      easing: 'ease-in-out',
+      reset: false
+    });
+  }, []);
     
   return (
 
@@ -11,7 +34,7 @@ const SobreMi = () => {
 
         <div className="row sobre-mi_row">
             <div className="col-sm-12 col-md-6 col-lg-6 columna-img">
-                <img className='foto-biografia' src="src/assets/imgs/foto-tatuador.jpg" alt="foto-tatuador"/>
+                <img className='foto-biografia' src="/imgs/foto-tatuador.jpg" alt="foto-tatuador"/>
             </div>
             <div className="col-sm-12 col-md-6 col-lg-6 columna-biografia">
                 <h2 className='biografia_titulo'>Nahuel Diaz</h2>

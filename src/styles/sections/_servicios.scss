@@ -16,6 +16,7 @@
 
     .contenedor-card-servicios {
 
+        
         padding: 0px;
         display: flex;
         justify-content: center;
@@ -31,7 +32,7 @@
                     overflow: hidden;
             
                     &:hover {
-                        transform: scale(1.02);
+                        transform: scale(1.01);
                     }
             
                     .servicios-imgs {
@@ -42,12 +43,13 @@
                     }
             
                     .card-body {
+                        width: 100%;
+                        height: 150px;
                         background-color: $custom-primary;
-                        border-radius: 0px 0px 20px 20px;
-                        padding: 20px;
-                        min-height: 130px;
+                        padding: 20px !important;
+
+                        min-height: 100px;
                         display: flex;
-                        ;
                         align-content: center;
                         align-items: center;
                         justify-content: center;
@@ -56,7 +58,7 @@
                             text-align: center;
                             margin: 0px;
                             font-family: $titulos;
-                            font-size: 30px;
+                            font-size: 28px;
                             font-weight: 400;
                             color: $titulos-color;
                         }

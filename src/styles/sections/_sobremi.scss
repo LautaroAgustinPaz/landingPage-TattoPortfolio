@@ -2,6 +2,7 @@
     border-top: 1px solid $custom-primary;
     background-color: $custom-background;
     padding: 5rem 3rem 5rem 3rem;
+    overflow: hidden;
 
     .sobre-mi_titulo {
         color: $custom-primary;
@@ -99,7 +100,10 @@
 
         .sobre-mi_row {
             margin: 0px;
+
+            .columna-biografia {
+            padding: 25px 20px;
+            }
         }
     }
-
 }
