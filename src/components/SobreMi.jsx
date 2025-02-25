@@ -41,9 +41,9 @@ const SobreMi = () => {
                 <p className='biografia_parrafo'>¡Hola! Soy Nahuel Díaz, un apasionado tatuador residente en la vibrante ciudad de Buenos Aires. Desde muy joven, descubrí que el arte era mi forma de expresarme y conectar con el mundo. Mi viaje en el mundo del tatuaje comenzó cuando tenía apenas 16 años, y desde entonces he dedicado mi vida a perfeccionar esta técnica ancestral.</p>
 
                 <div className='grupo-redes-sociales'>
-                     <div className='contenedor-redondo'><a href="http://" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram}  className='iconos-redes'/></a></div>
-                        <div className='contenedor-redondo'><a href="http://" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebook}  className='iconos-redes'/></a></div>
-                    <div className='contenedor-redondo'><a href="http://" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTiktok} className='iconos-redes'/></a></div>
+                    <div className='contenedor-redondo'><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram}  className='iconos-redes'/></a></div>
+                    <div className='contenedor-redondo'><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebook}  className='iconos-redes'/></a></div>
+                    <div className='contenedor-redondo'><a href="https://www.tiktok.com/es/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTiktok} className='iconos-redes'/></a></div>
                 </div>
             </div>
         </div>

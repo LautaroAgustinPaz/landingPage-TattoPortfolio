@@ -42,9 +42,9 @@ const Footer = () => {
                 <p className='contacto-p'><i className="bi bi-geo-alt text-light"></i><FontAwesomeIcon icon={faLocationDot}  className='icono-location'/> Calle Falsa 1284, Caba, <br />Argentina</p>
                 </div>
                 <div className='contenedor-redes-sociales'>
-                    <div className='contenedor-redondo'><a href="http://" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faWhatsapp}  className='iconos-redes'/></a></div>
-                    <div className='contenedor-redondo'><a href="http://" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram}  className='iconos-redes'/></a></div>
-                    <div className='contenedor-redondo'><a href="https://" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faEnvelope} className='iconos-redes'/></a></div>
+                    <div className='contenedor-redondo'><a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faWhatsapp}  className='iconos-redes'/></a></div>
+                    <div className='contenedor-redondo'><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram}  className='iconos-redes'/></a></div>
+                    <div className='contenedor-redondo'><a href="https://support.microsoft.com/es-es/office/c%C3%B3mo-iniciar-o-cerrar-sesi%C3%B3n-en-outlook-com-e08eb8ac-ac27-49f4-a400-a47311e1ee7e" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faEnvelope} className='iconos-redes'/></a></div>
                 </div>
             </div>     
         </div>
