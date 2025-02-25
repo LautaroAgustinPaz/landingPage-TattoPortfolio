@@ -28,19 +28,19 @@ const Testimonios = () => {
 
     const testimonials = [
         {
-            image: "public/imgs/testimonios/foto-opinion-1.jpg",
+            image: "imgs/testimonios/foto-opinion-1.webp",
             name: "Juan Pérez",
             comment: "Excelente trabajado de Nahuel, un genio la verdad y excelente trato de él y de todo el grupo que integra este estudio 🙌🏼🙌🏼🙌🏼",
             rating: "⭐⭐⭐⭐⭐",
         },
         {
-            image: "public/imgs/testimonios/foto-opinion-2.jpg",
+            image: "imgs/testimonios/foto-opinion-2.webp",
             name: "María Gómez",
             comment: "Muy buena atención al cliente, definitivamente lo recomiendo.",
             rating: "⭐⭐⭐⭐",
         },
         {
-            image: "public/imgs/testimonios/foto-opinion-3.jpg",
+            image: "imgs/testimonios/foto-opinion-3.webp",
             name: "Carlos López",
             comment: "Excelente experiencia, volvería a usar este servicio sin duda.",
             rating: "⭐⭐⭐⭐⭐",
@@ -68,6 +68,7 @@ const Testimonios = () => {
                                     className="testimonio-foto rounded-circle mb-3"
                                     width="70"
                                     height="70"
+                                    loading="lazy"
                                 />
                                 <h5 className='testimonio-nombre'>{testimonial.name}</h5>   
                             </div>

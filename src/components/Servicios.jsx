@@ -36,9 +36,10 @@ const Servicios = () => {
         <div className="col-xs-12 col-md-3 col-lg-3 card-contenedor">
           <div className="card h-100 servicios-cards">
             <img
-              src="/imgs/cards/card-1.jpg"
+              src="/imgs/cards/card-1.webp"
               className="card-img-top servicios-imgs"
               alt="Diseños personalizados"
+              loading="lazy"
             />
             <div className="card-body">
               <h5 className="card-title">Diseños personalizados</h5>
@@ -50,9 +51,10 @@ const Servicios = () => {
         <div className="col-xs-12 col-md-3 col-lg-3 card-contenedor">
           <div className="card h-100 servicios-cards">
             <img
-              src="/imgs/cards/card-2.jpg"
+              src="/imgs/cards/card-2.webp"
               className="card-img-top servicios-imgs"
               alt="Tapado de tatuajes antiguos"
+              loading="lazy"
             />
             <div className="card-body">
               <h5 className="card-title">Tapado de tatuajes antiguos</h5>
@@ -64,9 +66,10 @@ const Servicios = () => {
         <div className="col-xs-12 col-md-3 col-lg-3 card-contenedor">
           <div className="card h-100 servicios-cards">
             <img
-              src="/imgs/cards/card-3.jpg"
+              src="/imgs/cards/card-3.webp"
               className="card-img-top servicios-imgs"
               alt="Productos de cuidado post-tatuaje"
+              loading="lazy"
             />
             <div className="card-body">
               <h5 className="card-title">Productos de cuidado post-tatuaje</h5>

@@ -34,7 +34,7 @@ const SobreMi = () => {
 
         <div className="row sobre-mi_row">
             <div className="col-sm-12 col-md-6 col-lg-6 columna-img">
-                <img className='foto-biografia' src="/imgs/foto-tatuador.jpg" alt="foto-tatuador"/>
+                <img className='foto-biografia' src="/imgs/foto-tatuador.webp" alt="foto-tatuador" loading="lazy"/>
             </div>
             <div className="col-sm-12 col-md-6 col-lg-6 columna-biografia">
                 <h2 className='biografia_titulo'>Nahuel Diaz</h2>

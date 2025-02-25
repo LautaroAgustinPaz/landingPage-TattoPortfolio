@@ -19,7 +19,7 @@ const Footer = () => {
 
             {/* Columna 1 - Foto */}
             <div className="col-sm-12 col-md-4 columna-img">
-                <img src="public\imgs\logo-tatto.png" alt="Logo" className="img-fluid footer-img"></img>
+                <img src="imgs/logo-tatto.webp" alt="Logo" className="img-fluid footer-img" loading="lazy"></img>
             </div>
 
             {/* Columna 2 - Indice */}

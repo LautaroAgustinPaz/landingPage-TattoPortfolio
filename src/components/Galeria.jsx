@@ -5,10 +5,10 @@ const Galeria = () => {
   const [categoria, setCategoria] = useState("tradicional");
 
   const imagenes = {
-    tradicional: [1, 2, 3, 4, 5, 6].map(num => `/imgs/tradicional/imagen-${num}.jpg`),
-    realismo: [1, 2, 3, 4, 5, 6].map(num => `/imgs/realismo/imagen-${num}.jpg`),
-    geométrico: [1, 2, 3, 4, 5, 6].map(num => `/imgs/geometrico/imagen-${num}.jpg`),
-    lettering: [1, 2, 3, 4, 5, 6].map(num => `/imgs/lettering/imagen-${num}.jpg`),
+    tradicional: [1, 2, 3, 4, 5, 6].map(num => `/imgs/tradicional/imagen-${num}.webp`),
+    realismo: [1, 2, 3, 4, 5, 6].map(num => `/imgs/realismo/imagen-${num}.webp`),
+    geométrico: [1, 2, 3, 4, 5, 6].map(num => `/imgs/geometrico/imagen-${num}.webp`),
+    lettering: [1, 2, 3, 4, 5, 6].map(num => `/imgs/lettering/imagen-${num}.webp`),
   };
 
   useEffect (() => {
@@ -35,7 +35,7 @@ const Galeria = () => {
       origin: 'bottom',
       distance: '50px',
       duration: 1000,
-      delay: 800,
+      delay: 700,
       easing: 'ease-in-out',
       reset: false
     });

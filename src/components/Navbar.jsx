@@ -41,7 +41,7 @@ const Navbar = () => {
       <div className="container-fluid">
         
         <a onClick={scrollToTop}>
-          <img className='navbar-logo' src="/imgs/logo-tatto copy.png"/>
+          <img className='navbar-logo' src="/imgs/logo-tatto.webp" loading="lazy"/>
         </a>
         <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
