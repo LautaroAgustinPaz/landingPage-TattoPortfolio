@@ -1,16 +1,19 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { useState } from 'react';
 
 const Banner = () => {
+
+   const [videoLoaded, setVideoLoaded] = useState(false);
 
   const redirigirWhatsApp = () => {
     window.open("https://web.whatsapp.com/", "_blank");
   };
 
   return (
-    <section id='inicio' className='container-banner_principal'>
-      <video autoPlay muted loop id="background-video">
-        <source src="/vids/video-2.mp4" type="video/mp4" />
+    <section id='inicio' className={`container-banner_principal ${!videoLoaded ? 'loading' : ''}`}>
+      <video autoPlay muted loop id="background-video" poster="/imgs/video-placeholder.webp"  onLoadedData={() => setVideoLoaded(true)}>
+        <source src="/vids/video-2.webm" type="video/webm" />
         Tu navegador no soporta videos HTML5.
       </video>
       <div className='content'>
